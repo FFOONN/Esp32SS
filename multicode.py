@@ -58,7 +58,7 @@ class Project(Ui_MainWindow):
         self.lcdNumber_2.setStyleSheet ("background-color: rgb(170, 255, 165);")
         self.lcdNumber_3.setStyleSheet ("background-color: rgb(170, 255, 165);")
         self.pntick.timeout.connect(self.CSV)
-        self.pntick.start(1500)
+        self.pntick.start(2000)
 
     def offclick(self):
         self.label_9.setText("  กราบขออภัย ร้านปิดให้บริการแล้วค่ะ ")
@@ -71,7 +71,6 @@ class Project(Ui_MainWindow):
         self.label_9.setStyleSheet ("background-color: rgb(255, 85, 127);")   
         self.lcdNumber_2.setStyleSheet ("background-color: rgb(255, 85, 127);")
         self.lcdNumber_3.setStyleSheet ("background-color: rgb(255, 85, 127);")
-
         self.pntick.stop()
 
     def Exitclick(self):
